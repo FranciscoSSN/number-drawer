@@ -11,16 +11,18 @@
 </head>
 <body>
     <main>
-        <div>
+        <div class="logo">
             <img src="assets/logo.svg" alt="Logo">
             <p>numbers</p>
         </div>
 
         <section>
+            
             <div class="header">
                 <p>Online - gratuito</p>
                 <h1>Sorteador de números</h1>
             </div>
+
             <div class="questions">
                 <div class="itens">
                     <img src="assets/frame01.svg" alt="">
@@ -48,22 +50,22 @@
                 <div class="fields">
                     <div class="field">
                         <label for="number-field">números</label>
-                        <input type="number" required placeholder="2">
+                        <input type="text" required placeholder="2">
                     </div>
                     <div class="field">
                         <label for="number-field">de</label>
-                        <input type="number" required placeholder="1">
+                        <input type="text" required placeholder="1">
                     </div>
                     <div class="field">
                         <label for="number-field">de</label>
-                        <input type="number" required placeholder="100">
+                        <input type="text" required placeholder="100">
                     </div>
-                    <a href="#">
-                        <img src="assets/toggle-default.svg">
-                    </a>
                 </div>
+                <a href="#">
+                    <img src="assets/toggle-default.svg">
+                </a>
 
-                <button type="submit">sortear <img src="assets/arrow-button-go.svg"></button>
+                <button type="submit"><img src="assets/arrow-button-go.svg"> Não repetir número</button>
             </form>
         </aside>
     </main>
