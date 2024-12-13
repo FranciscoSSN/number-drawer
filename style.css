@@ -36,6 +36,9 @@ body {
     align-items: center;
 
     color: var(--content-primary);
+
+    background-image: url("./assets/img.svg");
+    
 }
 
 .logo {
@@ -162,12 +165,10 @@ aside form p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
     gap: 8px;
 
     padding-bottom: 20px;
-
-    
 }
 
 .field label {
@@ -181,7 +182,7 @@ aside form p {
 }
 
 .field input {
-    max-width: 100px;
+    max-width: 80px;
     height: 80px;
     background: transparent;
     appearance: unset;
@@ -200,4 +201,137 @@ aside form p {
 
 .field input:focus {
     outline: none;
+}
+
+form {
+    position: relative;
+}
+
+form a {
+    padding-bottom: 40px;
+    text-decoration: none;
+    
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: var(--content-primary);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    transition: background 3s;
+}
+
+form button {
+    max-width: 482px;
+    height: 56px;
+
+    background: var(--background-tertiary);
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+
+    color: var(--content-primary);
+
+    cursor: pointer;
+
+    transition: background 1s;
+}
+
+form button:hover {
+    background: var(--background-secondary);
+    border: solid;
+}
+
+/* Mobile */
+
+@media (max-width: 425px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        max-width: 319px;
+        height: 104px;
+
+        padding-top: 400px;
+
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: -130px;
+        left: 70px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    aside form h2 {
+        visibility: hidden;
+    }
+
+    aside form p {
+        visibility: hidden;
+    }
+
+    aside form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        height: 200px;
+        margin-bottom: 200px;
+    }
+
+    form button {
+        max-width: 482px;
+        height: 56px;
+    
+        background: var(--background-tertiary);
+        border: none;
+        border-radius: 8px;
+
+        padding: 20px 100px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+    
+        color: var(--content-primary);
+    
+        cursor: pointer;
+    
+        transition: background 1s;
+    }
+    
+    form button:hover {
+        background: var(--background-secondary);
+        border: solid;
+    }
+
 }
